@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.vis {
+    height: 90000px;
+}
+
+.panel {
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+    position: fixed;
+    text-align: center;
+    z-index: 99;
+}
+
+.heads {
+    top: 100px;
+    height: 30px;
+    position: sticky;
+    z-index: 999;
+}
+
+.head:nth-child(odd) {
+    height: 30px;
+    fill: rgb(241, 152, 146);
+}
+
+.head:nth-child(even) {
+    height: 30px;
+    fill: rgb(140, 199, 153);
+}
+
+.container:nth-child(odd) rect {
+    fill: #D3D3D3;
+}
+
+.container:nth-child(even) rect {
+    fill: #FFEFD5;
+}
